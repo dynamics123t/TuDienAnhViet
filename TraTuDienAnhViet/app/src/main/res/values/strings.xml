@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">TỪ ĐIỂN ANH VIỆT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="translated_text_hint">Văn bản đã dịch</string>
+    <string name="downloaded_models_label">Các gói ngôn ngữ: %1$s</string>
+    <string name="translate_progress">Đang dịch...</string>
+    <string name="delete_model">Xóa Ngôn Ngữ</string>
+    <string name="download_model">Tải Ngôn Ngữ</string>
+    <string name="unknown_error">Unknown error occurred.</string>
+
+    <string name="nav_drawer_open">Open navigation drawer</string>
+    <string name="nav_drawer_close">Close navigation drawer</string>
+
+    <string name="textHistory">Chưa có từ nào trong danh sách lịch sử của bạn</string>
+    <string name="textNote">Chưa có từ nào trong danh sách lưu ý của bạn</string>
+    <string name="channel_name">channel_1</string>
+    <string name="channel_description">This is channel main</string>
+    <string name="on1">Chào mừng đến với \nTừ Điển Anh - Việt</string>
+    <string name="on2">Tra từ vựng nhanh chóng</string>
+    <string name="on3">Học tiếng anh qua video hấp dẫn</string>
+    <string name="on4">Và những chức năng khác\n Hãy cùng nhau khám phá</string>
+    <string name="btnBatDau">Bắt Đầu</string>
+    <string name="btnTiepTuc">Tiếp Tục</string>
+    <string name="tvDichBanBan">Dịch Văn Bản</string>
+    <string name="tvTuLuuY">Từ cần lưu ý</string>
+    <string name="txLichSu">Lịch sử tra từ</string>
+    <string name="tvBQT">Bảng động từ BQT</string>
+    <string name="tvVideo">Video học tiếng anh</string>
+    <string name="tvQuest">Luyện thi tiếng anh</string>
+    <string name="txNhapVB">Nhập văn bản</string>
+    <string name="txtCoBan">Cơ Bản</string>
+    <string name="txtTC">Trang chủ</string>
+    <string name="txtTTD">Dịch Văn Bản</string>
+    <string name="txtLS">Lịch sử</string>
+    <string name="txtTCLY">Từ cần lưu ý</string>
+    <string name="txtHoTro">Hỗ Trợ</string>
+    <string name="txtDTBQT">Động từ bất quy tắc</string>
+    <string name="txtDSVideo">Danh sách video học tiếng anh</string>
+    <string name="txtKhac">Khác</string>
+    <string name="txtCaiDat">Cài đặt</string>
+    <string name="txtVeChungToi">Về chúng tôi</string>
+    <string name="tTC">Trang Chủ</string>
+    <string name="tLS">Lịch Sử</string>
+    <string name="tBQT">Bảng Động Từ Bất Quy Tắc</string>
+    <string name="tLuuY">Danh Sách Lưu Ý</string>
+    <string name="tDVB">Dịch Văn Bản</string>
+    <string name="tVideo">Học Tiếng Anh Qua Video</string>
+    <string name="tSearch">Tìm Kiếm</string>
+    <string name="tChiTiet">Chi Tiết</string>
+    <string name="tSlogan">Từ điển của mọi người</string>
+    <string name="tLanguage">Ngôn ngữ</string>
+    <string name="tAmThanh">Âm Thanh</string>
+    <string name="tspeed">Giọng nói</string>
+    <string name="tGA">Giọng Anh</string>
+    <string name="tGM">Giọng Mỹ</string>
+    <string name="tTD">Tốc độ</string>
+    <string name="tTB">Thông báo</string>
+    <string name="tCaiDat">Cài đặt</string>
+    <string name="title_main">Từ Điển Anh - Việt</string>
+    <string name="info">Thông Tin</string>
+</resources>

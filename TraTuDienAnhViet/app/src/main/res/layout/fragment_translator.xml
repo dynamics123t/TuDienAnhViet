@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/sourceLangSelector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sourceText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:hint="@string/txNhapVB" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Choose Language:"/>-->
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_weight="1"
+            android:id="@+id/buttonCamera"
+            style="@style/IconOnlyButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#f5f7fa"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            app:icon="@drawable/image"
+            app:iconTint="#777171"
+            app:iconSize="20dp"
+            android:background="@drawable/custom_imgv"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_weight="1"
+            android:id="@+id/buttonMicro"
+            style="@style/IconOnlyButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#f5f7fa"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            app:icon="@drawable/microphone"
+            app:iconSize="20dp"
+            app:iconTint="#777171"
+            android:background="@drawable/custom_imgv"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Choose Language:"/>-->
+        <Spinner
+            android:background="@drawable/custom_spinner"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="4"
+            android:id="@+id/sourceLangSelector"
+            android:layout_width="155dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_weight="2"
+            android:id="@+id/buttonSwitchLang"
+            style="@style/IconOnlyButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#f5f7fa"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            app:icon="@drawable/exchange"
+            app:iconSize="20dp"
+            app:iconTint="@color/colorPrimaryDark"
+            android:background="@drawable/custom_button"
+            />
+        <Spinner
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="4"
+            android:id="@+id/targetLangSelector"
+            android:layout_width="155dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:background="@drawable/custom_spinner"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <ToggleButton
+            android:id="@+id/buttonSyncSource"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textOff="@string/download_model"
+            android:textOn="@string/delete_model"
+            android:textSize="11sp"
+            android:layout_weight="1"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/custom_button"
+            />
+
+        <ToggleButton
+            android:id="@+id/buttonSyncTarget"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textOff="@string/download_model"
+            android:textOn="@string/delete_model"
+            android:textSize="11sp"
+            android:layout_weight="1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/custom_button"
+            />
+        <!--        app:layout_constraintStart_toStartOf="@id/targetLangSelector"-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="15"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="13"
+            android:id="@+id/downloadedModels"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/downloaded_models_label"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:visibility="gone"
+            android:layout_weight="2"
+            android:id="@+id/buttonCopy"
+            android:layout_marginEnd="5dp"
+            style="@style/IconOnlyButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#f5f7fa"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            app:icon="@drawable/copy"
+            app:iconSize="20dp"
+            app:iconTint="#777171"
+            android:background="@drawable/custom_imgv"
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/targetText"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="top"
+        android:hint="@string/translated_text_hint"
+        />
+
+</LinearLayout>
+

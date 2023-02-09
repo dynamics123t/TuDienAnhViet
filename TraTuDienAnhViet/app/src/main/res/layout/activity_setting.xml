@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/textView2"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginStart="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/tAmThanh"
+            android:textSize="18sp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginStart="32dp"
+            android:gravity="center_vertical"
+            android:text="@string/tspeed"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="106dp"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="50dp">
+
+                <RadioButton
+                    android:id="@+id/rdAnh"
+                    android:buttonTint="#FF33B5E5"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tGA" />
+
+                <RadioButton
+                    android:id="@+id/rdMy"
+                    android:buttonTint="#FF33B5E5"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tGM" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="32dp"
+            android:gravity="center_vertical"
+            android:text="@string/tTD"
+            android:textSize="18sp" />
+
+        <SeekBar
+            android:id="@+id/seekBarSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="10dp"
+            android:max="4"
+            android:progress="0"
+            android:progressDrawable="@drawable/track"
+            android:thumb="@drawable/thumb"
+            android:indeterminate="false"/>
+
+        <TextView
+            android:gravity="center_horizontal|center_vertical"
+            android:id="@+id/tvX"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="TextView" />
+
+
+            android:textSize="18sp" />
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_marginTop="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/swThongBao"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:text="@string/tTB"
+            android:textSize="18sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+        <LinearLayout
+            android:layout_marginTop="18sp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_marginStart="18dp"
+                android:layout_weight="1"
+                android:text="@string/tLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+            <Spinner
+                android:layout_marginEnd="18dp"
+                android:layout_weight="2"
+                android:id="@+id/spin"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+
+        <!--        <SeekBar-->
+<!--            android:id="@+id/seekBarSpeed"-->
+<!--            android:layout_marginStart="50dp"-->
+<!--            android:layout_marginEnd="50dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="74dp"-->
+<!--            android:max="5"-->
+<!--            android:min="1"-->
+<!--            android:progress="1" />-->
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

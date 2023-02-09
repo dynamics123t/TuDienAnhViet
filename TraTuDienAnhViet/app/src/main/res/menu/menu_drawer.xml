@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/txtCoBan">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_trangchu"
+                    android:icon="@drawable/home"
+                    android:title="@string/txtTC" />
+
+                <item
+                    android:id="@+id/nav_tratudien"
+                    android:icon="@drawable/search"
+                    android:title="@string/txtTTD" />
+
+                <item
+                    android:id="@+id/nav_lichsu"
+                    android:icon="@drawable/history"
+                    android:title="@string/txtLS" />
+
+
+                <item
+                    android:id="@+id/nav_tuyeuthich"
+                    android:icon="@drawable/heart"
+                    android:title="@string/txtTCLY" />
+
+
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="@string/txtHoTro">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_bqt"
+                    android:icon="@drawable/table_icon"
+                    android:title="@string/txtDTBQT" />
+                <item
+                    android:id="@+id/nav_dsvideo"
+                    android:icon="@drawable/television"
+                    android:title="@string/txtDSVideo" />
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="@string/txtKhac">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_caidat"
+                android:icon="@drawable/settings"
+                android:title="@string/txtCaiDat" />
+
+            <item
+                android:id="@+id/nav_vechungtoi"
+                android:icon="@drawable/information"
+                android:title="@string/txtVeChungToi" />
+            <item
+                android:icon="@null"
+                android:title="" />
+        </menu>
+    </item>
+
+</menu>

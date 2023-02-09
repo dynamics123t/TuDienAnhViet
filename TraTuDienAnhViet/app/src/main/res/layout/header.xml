@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="200dp"
+    android:background="@color/primary"
+    android:gravity="bottom"
+    android:padding="20dp">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:cardCornerRadius="15dp">
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+
+            android:src="@drawable/logo" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/tSlogan"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>
